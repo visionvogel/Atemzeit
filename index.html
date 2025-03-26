@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atemübung</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Atemübung</h1>
+
+      <div class="settings">
+        <label for="duration">Dauer:</label>
+        <select id="duration">
+          <option value="1">1 Minute</option>
+          <option value="2">2 Minuten</option>
+          <option value="3">3 Minuten</option>
+          <option value="4">4 Minuten</option>
+          <option value="5">5 Minuten</option>
+        </select>
+        <button id="startBtn">Start</button>
+      </div>
+
+      <p id="countdown">Verbleibende Zeit: --:--</p>
+
+      <div class="circle" id="circle"></div>
+      <div id="text">Bist du bereit?</div>
+
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span> 🌗 Dunkelmodus
+      </label>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
